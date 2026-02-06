@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Student Expense Tracker</h1>
+
+    <div class="form">
+        <input type="text" id="name" placeholder="Expense Name">
+        <input type="number" id="amount" placeholder="Amount">
+        <select id="category">
+            <option>Food</option>
+            <option>Travel</option>
+            <option>Shopping</option>
+            <option>Education</option>
+            <option>Other</option>
+        </select>
+        <button onclick="addExpense()">Add Expense</button>
+    </div>
+
+    <h2>Expense List</h2>
+    <ul id="expenseList"></ul>
+
+    <h2>Total Expense: ₹<span id="total">0</span></h2>
+
+    <h2>Category-wise Total</h2>
+    <ul id="categoryTotal"></ul>
+
+    <button class="clear" onclick="clearAll()">Clear All Expenses</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
